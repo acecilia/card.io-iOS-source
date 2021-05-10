@@ -11,7 +11,5 @@ workspace 'CardIO.xcworkspace'
 target 'Dummy' do
 end
 
-pod 'OpenCV', '3.4.6'
-# For development it is possible to swap the opencv dependency
-# pod 'OpenCV', :path => './opencv23'
+pod 'OpenCV', :path => '.'
 pod 'CardIO', :path => '.', :appspecs => ['icc']
