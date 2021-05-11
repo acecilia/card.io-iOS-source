@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
     spec.author = { 'Revolut' => 'team@revolut.com' }
     spec.static_framework = true
 
-    spec.ios.deployment_target = '11.0'
+    spec.ios.deployment_target = '10.0'
     spec.source_files = [
         'CardIOCardholderNameTextFieldDelegate.{h,m}',
         'Classes/**/*.{h,m,mm}',

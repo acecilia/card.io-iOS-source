@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
     spec.source = { :git =>'https://bitbucket.org/revolut/revolut-ios' }
     spec.license = { :type => 'Proprietary' }
     spec.author = { 'Revolut' => 'team@revolut.com' }
-    spec.ios.deployment_target = '11.0'
+    spec.ios.deployment_target = '10.0'
     spec.vendored_frameworks = [
         'Carthage/Build/opencv2.xcframework',
     ]
