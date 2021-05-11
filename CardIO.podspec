@@ -26,17 +26,10 @@ Pod::Spec.new do |spec|
         'HEADER_SEARCH_PATHS' => '${SRCROOT}/../dmz ${SRCROOT}/../dmz/cv ${SRCROOT}/../dmz/scan ${SRCROOT}/../dmz/models/generated ${SRCROOT}/../dmz/models/expiry',
         'OTHER_CPLUSPLUSFLAGS' => '$(OTHER_CFLAGS) -Wno-c++11-narrowing',
     }
-    spec.exclude_files = [
-        # App sources are mixed with the CardIO sources, so exclude them here
-        'Classes/RootViewController.m',
-        'Classes/iccAppDelegate.m',
-        'Classes/main.m',
-        'Classes/iccChoicesSelectViewController.m',
-    ]
     spec.public_header_files = 'CardIO_Public_API/**/*.h'
     spec.frameworks = 'Accelerate', 'AVFoundation', 'AudioToolbox', 'CoreMedia', 'CoreVideo', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'Security', 'UIKit'
     spec.libraries = 'c++'
-    spec.dependency 'OpenCV', '3.4.6'
+    spec.dependency 'OpenCV', '~> 4.0'
 
     # For optimal performance the sample app should better be run in release configuration
     #
@@ -48,16 +41,13 @@ Pod::Spec.new do |spec|
             'GCC_PREPROCESSOR_DEFINITIONS' => 'CARDIO_DEBUG=1 USE_CAMERA=1 DMZ_DEBUG=1 TEST_GENERATED_MODELS=1',
         }
         app_spec.source_files = [
-            'Classes/RootViewController.m',
-            'Classes/iccAppDelegate.m',
-            'Classes/main.m',
-            'Classes/iccChoicesSelectViewController.m',
+            'ClassesSampleApp/**/*.{m,swift}',
             'dmz/models/TestGeneratedModels.h',
             'dmz/models/TestGeneratedModels.mm',
         ]
         app_spec.resources = [
             'Resources/**/*',
-            'Classes/**/*.xib',
+            'ClassesSampleApp/**/*.xib',
         ]
         app_spec.pod_target_xcconfig = { 'INFOPLIST_FILE' => '${PODS_TARGET_SRCROOT}/icc-Framework-Info.plist' }
     end

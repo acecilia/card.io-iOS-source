@@ -29,12 +29,6 @@
     "HEADER_SEARCH_PATHS": "${SRCROOT}/../dmz ${SRCROOT}/../dmz/cv ${SRCROOT}/../dmz/scan ${SRCROOT}/../dmz/models/generated ${SRCROOT}/../dmz/models/expiry",
     "OTHER_CPLUSPLUSFLAGS": "$(OTHER_CFLAGS) -Wno-c++11-narrowing"
   },
-  "exclude_files": [
-    "Classes/RootViewController.m",
-    "Classes/iccAppDelegate.m",
-    "Classes/main.m",
-    "Classes/iccChoicesSelectViewController.m"
-  ],
   "public_header_files": "CardIO_Public_API/**/*.h",
   "frameworks": [
     "Accelerate",
@@ -51,7 +45,7 @@
   "libraries": "c++",
   "dependencies": {
     "OpenCV": [
-      "3.4.6"
+      "~> 4.0"
     ]
   },
   "appspecs": [
@@ -68,16 +62,13 @@
         "INFOPLIST_FILE": "${PODS_TARGET_SRCROOT}/icc-Framework-Info.plist"
       },
       "source_files": [
-        "Classes/RootViewController.m",
-        "Classes/iccAppDelegate.m",
-        "Classes/main.m",
-        "Classes/iccChoicesSelectViewController.m",
+        "ClassesSampleApp/**/*.{m,swift}",
         "dmz/models/TestGeneratedModels.h",
         "dmz/models/TestGeneratedModels.mm"
       ],
       "resources": [
         "Resources/**/*",
-        "Classes/**/*.xib"
+        "ClassesSampleApp/**/*.xib"
       ]
     }
   ]

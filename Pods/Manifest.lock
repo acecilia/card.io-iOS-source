@@ -1,9 +1,9 @@
 PODS:
   - CardIO (1.0.0):
-    - OpenCV (= 3.4.6)
+    - OpenCV (~> 4.0)
   - CardIO/icc (1.0.0):
-    - OpenCV (= 3.4.6)
-  - OpenCV (3.4.6)
+    - OpenCV (~> 4.0)
+  - OpenCV (4.5.2)
 
 DEPENDENCIES:
   - CardIO (from `.`)
@@ -17,8 +17,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  CardIO: e21f7de1cb8c476668b781f4ed2e9142818b7833
-  OpenCV: fe1adc76b3dd33965e757c5fdfa0c018a8b9f73b
+  CardIO: 9020c66012a4e212d99be1e976018fd3edca44e7
+  OpenCV: 93851bc8fbd7cf6f88781973a89cfc558213fb5d
 
 PODFILE CHECKSUM: 257a130c29088b252e5c5fe77ed46ca213d73965
 

@@ -6,6 +6,7 @@ INFOPLIST_FILE = ${PODS_TARGET_SRCROOT}/icc-Framework-Info.plist
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_CPLUSPLUSFLAGS = $(OTHER_CFLAGS) -Wno-c++11-narrowing
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "AVFoundation" -framework "Accelerate" -framework "AudioToolbox" -framework "CardIO" -framework "CoreMedia" -framework "CoreVideo" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "UIKit" -framework "opencv2"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}
