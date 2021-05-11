@@ -3,7 +3,7 @@ PODS:
     - OpenCV (~> 4.0)
   - CardIO/icc (1.0.0):
     - OpenCV (~> 4.0)
-  - OpenCV (4.5.2)
+  - OpenCV (4.0)
 
 DEPENDENCIES:
   - CardIO (from `.`)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CardIO: 9020c66012a4e212d99be1e976018fd3edca44e7
-  OpenCV: 93851bc8fbd7cf6f88781973a89cfc558213fb5d
+  OpenCV: 5b52f0aa12a9e6684236a2dfe8b4d194785e330a
 
 PODFILE CHECKSUM: 257a130c29088b252e5c5fe77ed46ca213d73965
 

@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |spec|
     spec.name = 'OpenCV'
-    spec.version = '4.5.2'
+    spec.version = '4.0'
     spec.summary = 'Revolut - OpenCV'
     spec.description = 'Revolut - OpenCV'
     spec.homepage = 'https://bitbucket.org/revolut/revolut-ios'
